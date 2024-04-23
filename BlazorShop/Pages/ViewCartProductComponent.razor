@@ -1,0 +1,48 @@
+﻿@page "/Shopping-cart/{id:int}"
+@using eShop.UseCases.PluginInterfaces.DataStore
+
+@inject IViewProduct viewProduct
+@inject IShoppingCartRepository shoppingCartRepository
+
+<h3>Product Details</h3>
+
+
+<div class="card" style="width: 50rem;">
+  <div class="card-body">
+    <img src="/images/@product.ImageLink" />
+    <h5 class="card-title">@product.Name</h5>
+    <h6 class="card-subtitle mb-2 text-muted">@product.Brand</h6>
+    <hr />
+    <p>
+        Price: <label style="color:darkred">@product.Price.ToString("c")</label>
+    </p>
+    <p class="card-text">@product.Description</p>
+    <button type="button" class="btn btn-primary" @onclick="HandleRemoveFromCart">@cartText</button>
+  </div>
+</div>
+<br />
+<NavLink href="Shopping-cart">Back to Shopping cart</NavLink>
+
+@code {
+    string cartText = "Remove from cart";
+    private Product product;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        if(Id > 0)
+        {
+            product = viewProduct.Execute(Id);
+        }
+    }
+
+    private void HandleRemoveFromCart()
+    {
+        shoppingCartRepository.RemoveProduct(Id);
+        cartText = "Removed";
+    }
+}

@@ -1,0 +1,36 @@
+﻿@page "/"
+@inject IJSRuntime JsRuntime;
+
+<body style="margin: 0; padding: 0; width: 100vw; height: 100vh;">
+    <div style="width: 100vw; height: 50vh;">
+        <img src="images/monstera.jpg" style=" width: 100%; height: 100%; object-fit: cover; filter: brightness(90%);">
+        <div style="position: absolute; top: 30%; left: 55%; transform: translate(-50%, -50%); color: white; text-align: center;">
+            <h2 style="font-size: 6rem; font-family: 'Bauhaus 93'; display:flex;">For the true plant lovers</h2>
+            <NavLink href=@($"/products") style="margin-top: 20px; padding: 10px 20px; font-size: 1rem; background-color: #111;
+                color: white; border: none; border-radius: 5px; cursor: pointer;">Get Started</NavLink>
+        </div>
+    </div>
+    <div style="width: 100vw; text-align: center; padding-top: 2%;">
+        <h1 style="font-size: 4rem; width: 100%; display: flex; padding-left: 15%; ">Why shop with us?</h1>
+        <div style="display: flex; width: 100vw; height: 50vh; overflow: hidden;">
+            <div style="display: flex; flex-direction: column; margin: 10px; padding-left: 4%; align-items: center;">
+                <span class="oi oi-globe" aria-hidden="true" style="font-size:3rem; color: black;"></span>
+                <p style="margin-top: 10px; text-align: center; font-size: 1rem;">Socialy responsible business</p>
+            </div>
+            <div style="display: flex; flex-direction: column; margin: 10px; padding-left: 10%; align-items: center;">
+                <span class="oi oi-box" aria-hidden="true" style="font-size: 3rem; color: black;"></span>
+                <p style="margin-top: 10px; text-align: center; font-size: 1rem;">Sustainable packaging</p>
+            </div>
+             <div style="display: flex; flex-direction: column; margin: 10px; padding-left: 10%; align-items: center;">
+                <span class="oi oi-timer" aria-hidden="true" style="font-size: 3rem; color: black;"></span>
+                <p style="margin-top: 10px; text-align: center; font-size: 1rem;">Free shipping</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+@code {
+    private void GoToProductsPage()
+    {
+    }
+}

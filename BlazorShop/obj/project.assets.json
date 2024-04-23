@@ -1,0 +1,156 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "eShop.CoreBusiness/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/eShop.CoreBusiness.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShop.CoreBusiness.dll": {}
+        }
+      },
+      "eShop.DataStore.HardCoded/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "eShop.UseCases": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/eShop.DataStore.HardCoded.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShop.DataStore.HardCoded.dll": {}
+        }
+      },
+      "eShop.UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "eShop.CoreBusiness": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/eShop.UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShop.UseCases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eShop.CoreBusiness/1.0.0": {
+      "type": "project",
+      "path": "../eShop.CoreBusiness/eShop.CoreBusiness.csproj",
+      "msbuildProject": "../eShop.CoreBusiness/eShop.CoreBusiness.csproj"
+    },
+    "eShop.DataStore.HardCoded/1.0.0": {
+      "type": "project",
+      "path": "../eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj",
+      "msbuildProject": "../eShop.DataStore.HardCoded/eShop.DataStore.HardCoded.csproj"
+    },
+    "eShop.UseCases/1.0.0": {
+      "type": "project",
+      "path": "../eShop.UseCases/eShop.UseCases.csproj",
+      "msbuildProject": "../eShop.UseCases/eShop.UseCases.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "eShop.CoreBusiness >= 1.0.0",
+      "eShop.DataStore.HardCoded >= 1.0.0",
+      "eShop.UseCases >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\t.siems\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\BlazorShop\\BlazorShop.csproj",
+      "projectName": "BlazorShop",
+      "projectPath": "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\BlazorShop\\BlazorShop.csproj",
+      "packagesPath": "C:\\Users\\t.siems\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\BlazorShop\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\t.siems\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj": {
+              "projectPath": "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj"
+            },
+            "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\eShop.DataStore.HardCoded\\eShop.DataStore.HardCoded.csproj": {
+              "projectPath": "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\eShop.DataStore.HardCoded\\eShop.DataStore.HardCoded.csproj"
+            },
+            "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\eShop.UseCases\\eShop.UseCases.csproj": {
+              "projectPath": "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\eShop.UseCases\\eShop.UseCases.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

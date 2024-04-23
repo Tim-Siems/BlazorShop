@@ -1,0 +1,11 @@
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\bin\Debug\net6.0\eShop.CoreBusiness.deps.json
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\bin\Debug\net6.0\eShop.CoreBusiness.dll
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\bin\Debug\net6.0\eShop.CoreBusiness.pdb
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\eShop.CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\eShop.CoreBusiness.AssemblyInfoInputs.cache
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\eShop.CoreBusiness.AssemblyInfo.cs
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\eShop.CoreBusiness.csproj.CoreCompileInputs.cache
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\eShop.CoreBusiness.dll
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\refint\eShop.CoreBusiness.dll
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\eShop.CoreBusiness.pdb
+C:\Users\t.siems\source\repos\BlazorShop\eShop.CoreBusiness\obj\Debug\net6.0\ref\eShop.CoreBusiness.dll

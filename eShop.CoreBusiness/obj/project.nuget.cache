@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gk18VR8PNMgtWkOo58aymRhGCuYKiUNuY5yr09RivHlUqUeNzG1de/cPTxAz6Bqst9a8L5JbQuXtXWayU/5lew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\t.siems\\source\\repos\\BlazorShop\\eShop.CoreBusiness\\eShop.CoreBusiness.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\t.siems\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\t.siems\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\t.siems\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

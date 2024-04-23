@@ -1,0 +1,56 @@
+﻿@page "/Shopping-cart"
+@using eShop.UseCases.PluginInterfaces.DataStore
+
+@inject IShoppingCartRepository shoppingCardRepository
+
+<h3>Shopping Cart</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Name
+           </th>
+           <th>
+               Brand
+           </th>
+           <th>
+               Price
+           </th>
+           <th>
+               Quantity
+           </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (products != null && products.Count() > 0)
+        {
+            @foreach (var prod in products)
+            {
+                <CartProductItemComponent Product="prod"></CartProductItemComponent>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4">
+                    Your Shopping cart is empty
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+@code {
+  
+    private IEnumerable<Product> products;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        products = shoppingCardRepository.GetProducts();
+    }
+}
